@@ -168,6 +168,7 @@ align-self: center;
     width: 156px;
     height: 8px;
     position: absolute;
+    gap: 35px;
     right: 0;
     bottom: 10%;
     left: 60%;
@@ -410,7 +411,6 @@ z-index: 1;
    /* /Menus */
 
 }
-
 @media (min-width: 320px) and (max-width: 799px){
     /* Header */
     html {
