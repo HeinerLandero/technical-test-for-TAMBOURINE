@@ -1,0 +1,343 @@
+/* The sources and fonts used on this landing page are as follows:
+- Montserrat Medium 500
+- Cardo Regular 400
+- Source Sans Regular 400
+- Work Sans SemiBold 600
+
+    font-family: 'Cardo', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black-wedding:#1B1B1B;
+    --green-wedding:#98A684;
+    --white-wedding:#ffffff;
+    --point-wedding:#98A684;
+    --greenst-wedding:#3C3C3C;
+    --swiper-theme-color:transparent !important;
+    --swiper-navigation-size: 40px;
+
+}
+html{
+    font-size: 62.5%;
+}
+/* Header  */
+#header{
+    width: 100%;
+    height: 100%;
+    max-height: 540px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+#header .text-container{
+    width: 61.2%;
+    height: 304.2px;
+}
+#header .container-tittle--lines{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+#header .tittle-small{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--green-wedding);
+    font-size: 1.4rem;
+    letter-spacing: 0.35px;
+    opacity: 1;
+    height: auto;
+}
+
+#header .line-title{
+    flex: 1;
+    height: 1px;
+    background-color: var(--green-wedding);
+    margin: 0 10px;
+    width: 39.21%;
+}
+#header h1{
+    font-family:  'Cardo', serif;
+    font-size: 6rem;
+    font-weight: 400;
+    color: var(--black-wedding);
+    opacity: 1;
+}
+#header .lists{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 71px;
+    padding-top: 56px;
+    padding-bottom: 74px;
+}
+#header .lists li{
+    font-family: 'Source Sans 3', sans-serif;
+    letter-spacing: 0px;
+    color: var(--black-wedding);
+    font-size: 2rem;
+    text-align: left;
+    opacity: 1;
+}
+#header .lists li::marker{
+    color: var(--green-wedding);
+}
+
+#header .lists ul{
+    list-style-position: inside;
+}
+
+#header .line-title--down{
+    height: 1px;
+    background-color: var(--green-wedding);
+    margin: 0 10px;
+    width: 100%;
+}
+
+
+/* /Header  */
+/* Slider */
+#section-slider{
+    width: 100%;
+    height: 800px;
+    max-height: 800px;
+
+    background:linear-gradient(to bottom, rgba(152, 166, 132, 1.5), transparent), url('./assets/img/landscape-m.jpg');
+
+    background-size: cover;
+    display: flex;
+    position: relative;
+}
+/* container part left */
+#section-slider .left-container--slider{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#section-slider .text-container--slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 585px;
+    height: 604px;
+    background-color: var(--white-wedding);
+    margin-left: 20px;
+    position: relative;
+    padding: 10px;
+}
+
+#section-slider .small-slider{
+    color: #98A684;
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.35px;
+}
+#section-slider .h-slider{
+    font-family: 'Cardo', serif;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: -1.39px;
+    line-height: 1;
+    color: var(--greenst-wedding);
+    margin-top: 18.5px;
+    margin-bottom: 20.5px
+}
+#section-slider .p-slider{
+    font-family:'Source Sans 3', sans-serif;
+    font-size: 1.6rem;
+    max-width: 359px;
+}
+#section-slider .aux-text--slider{
+align-self: center;
+}
+#section-slider .arrows-container{
+    align-self: flex-end;
+    display: flex;
+    width: 156px;
+    height: 8px;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    left: 60%;
+}
+#section-slider #left-arrow{
+    display: flex;
+    width: 70px;
+    background-image: url('./assets/icons/left-arrow.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+    margin-top: -19.1px;
+    padding: 0;
+}
+#section-slider .swiper-button-prev,.swiper-button-prev:after{
+    width: 70px;
+    position: relative;
+}
+#section-slider .swiper-button-next,.swiper-button-next:after{
+    width: 70px;
+    position: relative;
+
+}
+#section-slider #right-arrow{
+    display: flex;
+    width: 70px;
+    background-image: url('./assets/icons/left-arrow.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -17.2px;;
+    transform: rotate(180deg);
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+/* container part right */
+#section-slider .right-container--slider{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#section-slider .container--slider{
+    width: 60.93%;
+    height: 75.5%;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+   #counter{
+    font-family: 'Cardo', serif;
+    color: var(--white-wedding);
+    font-size: 20rem;
+    font-weight: 400;
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    z-index: 1;
+  }
+
+/* /Slider */
+
+/* Menus */
+#menus{
+    display: flex;
+    height: 100%;
+    max-height: 973px;
+    height: 973px;
+    width: 100%;
+
+}
+#menus .container-figure{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#menus .container-figure .figure-menus{
+    width: 75%;
+    height: 61.45%;
+    display: flex;
+    align-items: center;
+}
+#menus .container-figure .figure-menus img{
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+#menus .container-text--menus{
+    height: 100%;
+    width: 50%;
+    padding-left: 5.93%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#menus .small-menus{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--green-wedding);
+    font-size: 1.4rem;
+    letter-spacing: 0.35px;
+    opacity: 1;
+    height: auto;
+} 
+#menus .tittle-h--menus{
+    letter-spacing: -1.29px;
+    font-family: 'Cardo', serif;
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--greenst-wedding);
+    opacity: 1;
+    margin-top: 23px;
+    margin-bottom: 19px;
+}
+
+#menus p{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1.6rem;
+    color: var(--black-wedding);
+    max-width: 380px;
+    margin-bottom: 39px;
+}
+
+#menus .botton--menus{
+    width: 223px;
+    height: 54px;
+    max-width: 223px;
+    background-color: var(--green-wedding);
+    border: none;
+    color: var(--white-wedding);
+    font-size: 1.5rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+
+}
+#menus .box-text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* /Menus */
