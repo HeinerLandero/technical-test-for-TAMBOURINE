@@ -468,6 +468,7 @@ z-index: 1;
     /* Menus */
     #menus{
         flex-direction: column;
+        margin-bottom: 200px;
     }
     #menus .container-figure{
         width: 100%;
