@@ -26,7 +26,7 @@
 
 }
 html{
-    font-size: 62.5%;
+    font-size: 60.5%;
 }
 /* Header  */
 #header{
@@ -75,12 +75,13 @@ html{
     opacity: 1;
 }
 #header .lists{
-    display: flex;
+    display: grid;
     width: 100%;
+    grid-template-columns: repeat(3,1fr);
     height: auto;
     justify-content: center;
     align-items: center;
-    gap: 71px;
+    gap: 22px;
     padding-top: 56px;
     padding-bottom: 74px;
 }
@@ -95,18 +96,15 @@ html{
 #header .lists li::marker{
     color: var(--green-wedding);
 }
-
 #header .lists ul{
     list-style-position: inside;
 }
-
 #header .line-title--down{
     height: 1px;
     background-color: var(--green-wedding);
-    margin: 0 10px;
+    margin: 0 ;
     width: 100%;
 }
-
 
 /* /Header  */
 /* Slider */
@@ -114,9 +112,7 @@ html{
     width: 100%;
     height: 800px;
     max-height: 800px;
-
     background:linear-gradient(to bottom, rgba(152, 166, 132, 1.5), transparent), url('./assets/img/landscape-m.jpg');
-
     background-size: cover;
     display: flex;
     position: relative;
@@ -227,31 +223,31 @@ align-self: center;
     height: 100%;
   }
 
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.swiper-slide {
+text-align: center;
+font-size: 18px;
+background: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-   #counter{
-    font-family: 'Cardo', serif;
-    color: var(--white-wedding);
-    font-size: 20rem;
-    font-weight: 400;
-    position: absolute;
-    bottom: 0;
-    right: 15%;
-    z-index: 1;
-  }
+.swiper-slide img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+#counter{
+font-family: 'Cardo', serif;
+color: var(--white-wedding);
+font-size: 20rem;
+font-weight: 400;
+position: absolute;
+bottom: 0;
+right: 15%;
+z-index: 1;
+}
 
 /* /Slider */
 
@@ -338,6 +334,156 @@ align-self: center;
     flex-direction: column;
     justify-content: center;
 }
-
-
 /* /Menus */
+
+@media (min-width: 1570px) and (max-width: 1878px){
+    html {
+        font-size: 59.5%;
+    }
+   /* Header */
+    #header .text-container{
+        width: 70%;
+    }
+    #header .lists{
+        grid-template-columns: repeat(3,1fr);
+    }
+   /* /Header */
+   
+}
+@media (min-width: 1200px) and (max-width: 1400px){
+    #header .text-container{
+        margin-bottom: 100px;
+    }
+    #header .lists{
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+}
+@media (min-width: 800px) and (max-width: 1199px){
+    html {
+        font-size: 57.5%;
+    }
+    #header{
+        height: 100vh;
+        margin: 0;
+    }
+    #header .text-container{
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 10px;
+    }
+    #header .lists{
+        padding-top: 14px;
+        padding-bottom: 46px;
+    }
+    /* Slider */
+    #section-slider{
+        width: 100%;
+        height: 100vh;
+        background: none;
+    }
+    #section-slider .text-container--slider{
+        width: 100%;
+    }
+    #section-slider .aux-text--slider{
+        text-align: center;
+    }
+    #section-slider .arrows-container{
+        left: 30%;   
+    }
+    #section-slider .container--slider{
+        width: 100%;
+    }
+    #counter{
+        bottom: 7%;
+        right: 0;
+    }
+   /* /Slider */
+
+   /* Menus */
+
+   #menus .box-text{
+
+    width: 80% ;
+   }
+
+   /* /Menus */
+
+}
+
+@media (min-width: 320px) and (max-width: 799px){
+    /* Header */
+    html {
+        font-size: 46.5%;
+    }
+    #header .text-container{
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 10px;
+        justify-content: center;
+    }
+    #header .lists{
+        padding-top: 14px;
+        padding-bottom: 30px;
+    }
+    /* /Header */
+
+    /* Slider */
+    #section-slider{
+        width: 100%;
+        height: 100vh;
+        background: none;
+        flex-direction: column-reverse;
+    }
+    #section-slider .left-container--slider{
+        width: 100%;
+        align-items: flex-start;
+        height: auto;
+    }
+    #section-slider .text-container--slider{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    #section-slider .aux-text--slider{
+        text-align: center;
+    }
+    #section-slider .arrows-container{
+        top: -14%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #section-slider .container--slider{
+        width: 100%;
+    }
+    #section-slider .right-container--slider{
+        width: 100%;
+    }
+    #counter{
+        display: none;
+    }
+
+    /* /Slider */
+    /* Menus */
+    #menus{
+        flex-direction: column;
+    }
+    #menus .container-figure{
+        width: 100%;
+        justify-content: center;
+    }
+    #menus .container-text--menus{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 0;
+    }
+    #menus .botton--menus{
+        align-self: center;
+    }
+    /*/Menus */
+    
+
+}
