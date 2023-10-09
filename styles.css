@@ -427,6 +427,7 @@ z-index: 1;
         grid-template-columns:1fr;
         gap: 10px;
         justify-content: center;
+        width: 85%;
     }
     #header .lists{
         padding-top: 14px;
@@ -434,7 +435,7 @@ z-index: 1;
         flex-direction: column;
     }
     #header .lists li {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     /* /Header */
 
